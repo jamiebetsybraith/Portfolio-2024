@@ -77,3 +77,14 @@ p {
 .hero {
     margin-bottom: 100px;
 }
+
+.fullwidthImg img {
+    width: 100%;
+    margin: 0px;
+}
+
+.halfImg Img {
+    width: 50%;
+    float: left;
+    margin: 0px;
+}
