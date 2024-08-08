@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    display: block;
+    padding-left: 10px;
+}
+
+li {
+    display: inline-block;
+    padding: 20px;
+}
+
+li :hover {
+    background-color: fuchsia;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: "Roboto Mono", monospace;
+    color: black;
+    font-size: 240px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 160px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    padding-left: 20px;
+
+}
+
+h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    color: black;
+    padding-left: 20px;
+    letter-spacing: 3px;
+    line-height: 100px;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+.blackDivider {
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin-top: -48px;
+    margin-bottom: 48px;
+}
+
+.duo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px
+}
+
+
+.blurb {
+    margin-left: 40px;
+    width: 50%;
+    line-height: 1.8;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.hero {
+    margin-bottom: 100px;
+}
