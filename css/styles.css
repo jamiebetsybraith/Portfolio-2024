@@ -269,7 +269,7 @@ p {
   
   #sophia {
     grid-area: sophia;
-    background-image: url("main/images/Sophia-Cover_rectangle-2000.jpg");
+    background-image: url("/images/Sophia-Cover_rectangle-2000.jpg");
   }
 
   #capella {
