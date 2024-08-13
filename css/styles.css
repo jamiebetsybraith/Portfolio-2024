@@ -269,32 +269,32 @@ p {
   
   #sophia {
     grid-area: sophia;
-    background-image: url("Portfolio-2024/images/Sophia-Cover_rectangle-2000.jpg");
+    background-image: url("../images/Sophia-Cover_rectangle-2000.jpg");
   }
 
   #capella {
     grid-area: capella;
-    background-image: url("Portfolio-2024/images/Capella-Cover-Mockup-Square-1600.jpg");
+    background-image: url("../images/Capella-Cover-Mockup-Square-1600.jpg");
   }
   
   #strayer {
     grid-area: strayer;
-    background-image: url("Portfolio-2024/images/Strayer-Cover-Mockup-Square1600.jpg");
+    background-image: url("../images/Strayer-Cover-Mockup-Square1600.jpg");
   }
   
   #moneyKite {
     grid-area: moneyKite;
-    background-image: url("Portfolio-2024/images/money-kite-cover-image.jpg");
+    background-image: url("../images/money-kite-cover-image.jpg");
   }
   
   #strategy1 {
     grid-area: strategy1;
-    background-image: url("Portfolio-2024/images/portfolio-locked-grayscale.png");
+    background-image: url("../images/portfolio-locked-grayscale.png");
   }
 
   #strategy2 {
     grid-area: strategy2;
-    background-image: url("Portfolio-2024/images/portfolio-locked-grayscale.png");
+    background-image: url("../images/portfolio-locked-grayscale.png");
   }
   
   .categoryGridArea {
