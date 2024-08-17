@@ -26,7 +26,6 @@ h1 {
     font-size: 240px;
     text-transform: uppercase;
     font-weight: 400;
-    line-height: 160px;
     display: inline-block;
     margin-top: 60px;
     margin-bottom: 38px;
@@ -56,8 +55,13 @@ h3 {
     padding-left: 40px;
 }
 
+
+.subhead {
+    line-height: 1;
+}
+
 .projectTitle {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 15px;
     height: 25px;
     color: white;
@@ -73,18 +77,21 @@ p {
     font-size: 20px;
 }
 
-.blackDivider {
-    height: 2px;
-    background-color: black;
-    display: block;
-    margin-top: -48px;
-    margin-bottom: 48px;
-}
 
 .duo {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.displayJamie,
+.displayBraith {
+    border-bottom: 2px black solid;
+    line-height: 0.25;
+    padding-top: 50px;
+    width: 100%;
+
 }
 
 
@@ -92,8 +99,8 @@ p {
     margin-left: 40px;
     width: 45%;
     line-height: 1.8;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 25px;
+    margin-bottom: 50px;
     border-left: 10px #00E6EB solid;
     padding-left: 20px;
 }
@@ -107,10 +114,11 @@ p {
     display: flex;
     flex-direction: row;
     float: right;
-    margin-top: -660px;
-    height: 560px;
+    margin-top: -700px;
+    height: 800px;
     width: 45%;
-    z-index: 100;
+    z-index: -100;
+    /*background-color: yellow;*/
 }
 
 /* 8 pointed star */
@@ -122,8 +130,8 @@ p {
     margin: 0 auto;
     align-self: flex-start;
     position: sticky;
-    top: 200px;
-    z-index: 1;
+    top: 100px;
+    z-index: -100;
 }
 
 #eightVert {
@@ -236,21 +244,31 @@ p {
 }
 
 @keyframes skew1 {
-    0%, 50%, 100% 	{ 
+
+    0%,
+    50%,
+    100% {
         transform: skew(25deg, 1deg);
-      }
-    25%, 75% 	{ 
+    }
+
+    25%,
+    75% {
         transform: skew(-25deg, 20deg);
-      }
+    }
 }
 
 @keyframes skew2 {
-    0%, 50%, 100% 	{ 
+
+    0%,
+    50%,
+    100% {
         transform: skew(-5deg, -10deg);
-      }
-    25%, 75% 	{ 
+    }
+
+    25%,
+    75% {
         transform: skew(-10deg, -15deg);
-      }
+    }
 }
 
 /* WORK SECTION */
@@ -261,43 +279,43 @@ p {
     grid-template-rows: 600px 600px 600px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "sophia capella"
-    "strayer moneyKite"
-    "strategy1 strategy2"
+        "sophia capella"
+        "strayer moneyKite"
+        "strategy1 strategy2"
     ;
-  }
-  
-  #sophia {
+}
+
+#sophia {
     grid-area: sophia;
     background-image: url("https://jamiebetsybraith.github.io/Portfolio-2024/images/sophia.jpg");
-  }
+}
 
-  #capella {
+#capella {
     grid-area: capella;
     background-image: url("https://jamiebetsybraith.github.io/Portfolio-2024/images/capella.jpg");
-  }
-  
-  #strayer {
+}
+
+#strayer {
     grid-area: strayer;
     background-image: url("https://jamiebetsybraith.github.io/Portfolio-2024/images/strayer.jpg");
-  }
-  
-  #moneyKite {
+}
+
+#moneyKite {
     grid-area: moneyKite;
     background-image: url("https://jamiebetsybraith.github.io/Portfolio-2024/images/money-kite.jpg");
-  }
-  
-  #strategy1 {
+}
+
+#strategy1 {
     grid-area: strategy1;
     background-image: url("https://jamiebetsybraith.github.io/Portfolio-2024/images/locked.png");
-  }
+}
 
-  #strategy2 {
+#strategy2 {
     grid-area: strategy2;
     background-image: url("https://jamiebetsybraith.github.io/Portfolio-2024/images/locked.png");
-  }
-  
-  .categoryGridArea {
+}
+
+.categoryGridArea {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -305,10 +323,10 @@ p {
     cursor: pointer;
     display: grid;
     align-content: end;
-  }
+}
 
-  .heading {
-    background-color: rgba(0,0,0,0.8);
+.heading {
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 25px;
     height: 70px;
     color: white;
@@ -316,36 +334,36 @@ p {
     font-weight: 300;
     font-size: 30px;
     font-style: normal;
-  }
+}
 
-  .descriptor {
+.descriptor {
     color: rgb(186, 186, 186);
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 18px;
     font-style: italic;
     padding-top: 5px;
-  }
+}
 
-  .footer {
+.footer {
     height: 200px;
     background: black;
     margin-top: 40px;
     padding: 20px;
-  }
+}
 
-  .footer p {
+.footer p {
     color: white;
-  }
+}
 
 
-  .footer li {
+.footer li {
     display: inline-block;
     padding: 20px;
     font-weight: 100;
-  }
+}
 
-  .footer li:hover {
+.footer li:hover {
     cursor: pointer;
     text-decoration: underline;
 }
@@ -359,5 +377,176 @@ p {
     padding-left: 20px;
     padding-top: 100px;
 
-    
+
+}
+
+/* Mobile (Portrait and Landscape) */
+@media only screen and (max-width: 767px) {
+
+    /* Styles for mobile devices */
+    body {
+        /*background-color: lightblue;*/
+    }
+
+    nav {
+        margin-bottom: -30px;
+    }
+
+    .displayJamie h1,
+    .displayBraith h1 {
+        font-size: 100px;
+        line-height: 0;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    .blurb p {
+        font-size: 16px;
+    }
+
+    .blurb {
+        width: 80%;
+        margin-left: 0px;
+        margin-top: 160px;
+    }
+
+    .flexAnimations {
+        height: 420px;
+        width: 100%;
+        z-index: -100;
+        margin-top: -300px;
+        /*background-color: yellow;*/
+    }
+
+    /* 8 pointed star */
+    .shapeA {
+        top: 120px;
+        width: 1fr;
+        margin-left: 30px;
+        z-index: -100;
+    }
+
+    #eightVert, #eightHorz {
+        height: 75px;
+        width: 75px;
+    }
+
+    /* burst */
+    .shapeB {
+        top: 100px;
+        margin-bottom: 15px;
+        width: 1fr;
+    }
+
+    #burst1,
+    #burst2,
+    #burst3,
+    #burst4 {
+        height: 75px;
+        width: 75px;
+    }
+
+
+    /* skew */
+    .shapeC {
+        top: 240px;
+        width: 1fr;
+    }
+
+    .skew {
+        display: flex;
+        grid-area: skew;
+        height: 70px;
+        width: 70px;
+    }
+
+    h2 {
+        font-size: 22px;
+        padding-left: 25px;
+    }
+
+    nav p {
+        font-size: 14px;
+    }
+}
+
+/* Tablet (Portrait and Landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* Styles for tablet devices */
+    body {
+        /*background-color: lightgreen;*/
+    }
+
+    .displayJamie h1,
+    .displayBraith h1 {
+        font-size: 140px;
+        line-height: .02;
+    }
+
+    .blurb p {
+        font-size: 16px;
+    }
+
+    .blurb {
+        width: 45%;
+    }
+
+    .flexAnimations {
+        margin-top: -1000px;
+        height: 1130px;
+        width: 45%;
+        z-index: -100;
+        /*background-color: yellow;*/
+    }
+
+    /* 8 pointed star */
+    .shapeA {
+        top: 120px;
+        z-index: -100;
+    }
+
+    #eightVert, #eightHorz {
+        height: 90px;
+        width: 90px;
+
+    }
+
+    /* burst */
+    .shapeB {
+        top: 120px;
+    }
+    #burst1,
+    #burst2,
+    #burst3,
+    #burst4 {
+        height: 90px;
+        width: 90px;
+    }
+
+    /* skew */
+    .shapeC {
+        top: 320px;
+    }
+    .skew {
+        display: flex;
+        grid-area: skew;
+        height: 90px;
+        width: 90px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+}
+
+/* Desktop (Small and Large) */
+@media only screen and (min-width: 1025px) {
+
+    /* Styles for desktop devices */
+    body {
+        /*background-color: lightcoral;*/
+    }
+
 }
